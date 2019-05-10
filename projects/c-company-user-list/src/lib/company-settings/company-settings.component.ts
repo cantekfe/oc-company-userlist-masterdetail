@@ -8,7 +8,7 @@ import { SettingsService } from '../services/settings.service';
 })
 
 export class CompanySettingsComponent implements OnInit {
-  settings =[];
+  settings:any;
   constructor(private _setService: SettingsService) {}
 
   ngOnInit() {
