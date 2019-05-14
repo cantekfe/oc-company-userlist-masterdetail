@@ -34,6 +34,6 @@ import { CompanySettingsComponent } from './company-settings/company-settings.co
   exports: [CompanyContainerComponent]
   })
 
-export class ListModule { }
+export class CompanyListModule { }
 
 
