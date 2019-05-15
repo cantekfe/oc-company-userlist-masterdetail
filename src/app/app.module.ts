@@ -4,16 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
-
-import { CompanyListComponent } from './company-list/company-list.component';
-import { CompanyDetailsComponent } from './company-details/company-details.component';
 import {MatTableModule ,MatIconModule,MatCardModule,MatButtonModule } from '@angular/material';
-import { CompanyService } from './services/company.service';
-import { SettingsService } from './services/settings.service';
-
-import { CompanyContainerComponent } from './company-container/company-container.component';
-import { CompanySettingsComponent } from './company-settings/company-settings.component';
-
+import{CompanyListModule} from '../../projects/c-company-user-list/src/lib/list.module'
 @NgModule({
   imports: [
     BrowserModule,
@@ -23,15 +15,13 @@ import { CompanySettingsComponent } from './company-settings/company-settings.co
     MatTableModule,
     MatIconModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    CompanyListModule
   ],
   declarations: [
     AppComponent,
-    CompanyListComponent,
-    CompanyDetailsComponent,
-    CompanyContainerComponent,
-    CompanySettingsComponent],
-  bootstrap: [AppComponent],
-  providers: [CompanyService,SettingsService]
+    
+    ],
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
