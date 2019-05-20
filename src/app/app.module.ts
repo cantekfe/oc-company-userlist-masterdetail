@@ -19,8 +19,7 @@ import{CompanyListModule} from '../../projects/c-company-user-list/src/lib/list.
     CompanyListModule
   ],
   declarations: [
-    AppComponent,
-    
+    AppComponent, 
     ],
   bootstrap: [AppComponent]
 })

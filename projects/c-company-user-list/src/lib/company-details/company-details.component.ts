@@ -28,7 +28,6 @@ export class CompanyDetailsComponent {
      //animation
     this.display_loading = 'block';
     this.display_view = 'none';
-
     this._companyId = +value;
     this._companyService.getCompany(this.companyId)
       .subscribe((c: Company[]) => {
@@ -36,7 +35,6 @@ export class CompanyDetailsComponent {
          //animation
         this.display_loading = 'none';
         this.display_view = 'block';
-
         this.company = c.find(a => a.id == this._companyId);
       })
   }

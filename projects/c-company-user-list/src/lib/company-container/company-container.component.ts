@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { ToolboxComponent } from '../toolbox-decorator';
 
  @ToolboxComponent({
@@ -7,16 +7,12 @@ import { ToolboxComponent } from '../toolbox-decorator';
    componentName : 'CompanyContainerComponent'
  })
 @Component({
-  selector: 'app-company-container',
+  selector: 'pack-company-list-container',
   templateUrl: './company-container.component.html',
   styleUrls: ['./company-container.component.css']
 })
-export class CompanyContainerComponent implements OnInit {
+export class CompanyContainerComponent {
 
-  constructor() { }
-
-  ngOnInit() {
-  }
   flipped = false;
   flipIt() {
     this.flipped = !this.flipped;
